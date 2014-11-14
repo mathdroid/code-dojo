@@ -10,12 +10,12 @@ int main() {
   //int temp=1;
   vector<int> inside, lastInside;
   cin >> numRows;
-  for (int i=0;i<=numRows;i++) {
+  for (int i=0;i<numRows;i++) {
 
     inside.resize(i+1);
     //PRINT INSIDE VECTORS HERE
-    for (int j=0;j<i;j++) {
-      if ((j==0)||(j==i-1)) {
+    for (int j=0;j<i+1;j++) {
+      if ((j==0)||(j==i)) {
         cout << 1 << " ";
         inside[j] = 1;
       }
