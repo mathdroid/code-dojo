@@ -39,7 +39,7 @@ int main() {
       }
     }
     else if ((s[i]=='c')||(s[i]=='C')) {
-      if ((s[i-1]=='i')||(s[i-1]=='I')) {
+      if ((s[i-1]=='x')||(s[i-1]=='X')) {
         sVal=sVal+80;
       }
       else {
