@@ -1,0 +1,49 @@
+CHALLENGE DESCRIPTION
+Dikarenakan kerusakan beberapa generator PLN, maka PLN dengan terpaksa harus memadamkan listrik
+secara berkala di beberapa kecamatan di Jakarta. Pemadaman akan dilakukan secara satu persatu kecamatan.
+Ada 17 kecamatan yang akan dipadamkan listriknya. PLN akan memadamkan listrik di kecamatan-kecamatan tersebut
+berdasarkan nomor urut 1-17. No. 1 adalah Kecamatan Matraman sedangkan no. 13 adalah Setiabudi.
+
+Agar pemadaman dapat dilakukan secara adil, maka pihak PLN akan memadamkan listrik secara "random" dengan
+menggunakan program komputer. Pemadaman akan dilakukan pertama pada kecamatan no. 1 dan terakhir
+kecamatan no. 13. PLN beralasan karena daerah Setiabudi adalah pusat bisnis, maka pemadaman memiliki
+resiko tinggi dan harus dilakukan terakhir.
+
+Skema pemadaman adalah dengan menggunakan tiga variabel, yaitu N, M, dan L, di mana N adalah jumlah kecamatan,
+M adalah "besar langkah", dan L adalah nomor kecamatan yang akan dipadamkan listriknya terakhir. Contoh apabila
+N adalah 17, M adalah 5, dan L adalah 7, maka urutan pemadaman adalah
+1,6,11,16,5,12,2,9,17,10,4,15,14,3,8,13,7
+
+Tugas kamu adalah membuat program yang akan menentukan besar M dengan
+nilai N dan L yang telah ditentukan.
+
+
+INPUT SAMPLE
+/**************************** input.txt ****************************/
+/****************************** Start ******************************/
+N=17
+L=13
+/******************************* End *******************************/
+
+
+OUTPUT SAMPLE
+/*************************** output.txt ****************************/
+/****************************** Start ******************************/
+M=7
+/******************************* End *******************************/
+
+
+RULES AND ASSUMPTIONS
+- Untuk setiap langkah di M, kecamatan yang sudah dipadamkan harus dilongkap.
+- Apabila langkah telah melewati N, maka akan kembali ke no. 1.
+- Gunakan algoritma yang paling efisien yang kamu ketahui.
+  Kompleksitas O(n^2) tidak termasuk jawaban yang memuaskan.
+- Program yang dibuat harus membaca sebuah file yang berisikan sebuah nomor yang akan dipakai sebagai N dan L.
+- Program harus print output ke file lain
+- Apabila file input terdiri dari lebih dari dua baris, maka tolak dan print error.
+- Apabila file mengandung format lain daripada yang terlihat di atas, maka tolak dan print error
+
+
+
+
+

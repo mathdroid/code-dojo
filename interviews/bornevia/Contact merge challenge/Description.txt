@@ -1,0 +1,80 @@
+CHALLENGE DESCRIPTION
+Company A has a corporate-wide database of their customers, stored in a csv format.
+This company has been running for decades, so their database has been
+accumulating for quite some time now.
+
+Recently, Company A decided that they want to reduce the size of their database by
+merging all of the duplicate entries.
+
+
+INPUT SAMPLE
+/************************** customers.csv ***************************/
+/****************************** Start ******************************/
+Name,Email,Facebook,Twitter
+Rita Greer,RitaHGreer@teleworm.us,,
+Fernando Lamb,,,Unforsibut
+Beulah Jones,,,Proich
+Karen Bublitz,,Haterind,
+Yvonne Howell,,,Bellaing
+Jill Owens,,,Dract1959
+Karen Bublitz,KarenJBublitz@armyspy.com,,
+Fernando Lamb,,Thozed,
+Alton Banks,AltonKBanks@jourrapide.com,,
+Rita Greer,,Trunever,
+Yvonne Howell,YvonnePHowell@dayrep.com,,
+Alton Banks,,,Haptinseele
+Fernando Lamb,FernandoHLamb@armyspy.com,,
+Karen Bublitz,,,Thedis
+Neal Smith,,Shein1977,
+Evelyn Griffin,EvelynEGriffin@armyspy.com,,
+Evelyn Griffin,,Allind1981,
+Alton Banks,,Gallenkamp,
+/******************************* End *******************************/
+
+As you can see here, their database is clean, however the problem was, every row
+of customer info only contains either their email address, Facebook username, or Twitter
+username. So, there will be duplicate rows for customers who have more than
+one information. For example there are two entries for Rita Greer; one
+that contains her email address, and one that contains her Facebook username.
+
+Recently, Company A decided that they want to reduce the size of their database by
+merging all of the duplicate entries.
+
+Your job as a software engineer is to develop a program that will take the csv file
+above, combine the customers based on their names, and output the results into another file.
+
+RULES AND ASSUMPTIONS
+- Preserve the header row
+- Your program must begin with reading a file and end with writing to the resulting output file
+- Your output must be sorted by the customers' name alphabetically
+- Email may contain mixed of lowercase and uppercase letters, convert all email to lower case in the output
+- Values may contain leading and/or trailing white spaces which consist of spaces, tabs, or mixed of both. Don't forget to trim them in your output.
+- Your program must be fast, efficient, and able to handle extremely large input files
+- You can assume that there is no comma and quotation mark in any of the values
+- Reject the input file by throwing an error if there are extra columns in any of the rows
+- Reject the input file by throwing an error if there are missing columns in any of the rows
+- Reject the input file by throwing an error if the email is not in a valid format in any of the rows
+- Use any programming language of your choice, but C-like languages, such as Java or JavaScript are preferred
+
+
+OUTPUT SAMPLE
+/************************** customers_merged.csv ***************************/
+/****************************** Start ******************************/
+Name,Email,Facebook,Twitter
+Alton Banks,altonkbanks@jourrapide.com,Gallenkamp,Haptinseele
+Beulah Jones,,,Proich
+Evelyn Griffin,evelynegriffin@armyspy.com,Allind1981,
+Fernando Lamb,fernandohlamb@armyspy.com,Thozed,Unforsibut
+Jill Owens,,,Dract1959
+Karen Bublitz,karenjbublitz@armyspy.com,Haterind,Thedis
+Neal Smith,,Shein1977,
+Rita Greer,ritahgreer@teleworm.us,Trunever,
+Yvonne Howell,yvonnephowell@dayrep.com,,Bellaing
+/******************************* End *******************************/
+
+
+
+
+
+
+

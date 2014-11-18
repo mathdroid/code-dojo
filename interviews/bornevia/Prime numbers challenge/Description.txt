@@ -1,0 +1,29 @@
+CHALLENGE DESCRIPTION
+Buatlah sebuah program yang bisa mem-print nomor prima dari satu sampai N.
+
+
+INPUT SAMPLE
+/**************************** input.txt ****************************/
+/****************************** Start ******************************/
+10
+/******************************* End *******************************/
+
+
+OUTPUT SAMPLE
+/*************************** output.txt ****************************/
+/****************************** Start ******************************/
+2, 3, 5, dan 7
+/******************************* End *******************************/
+
+
+RULES AND ASSUMPTIONS
+- Setiap jawaban dipisahkan oleh sebuah koma dan spasi.
+- Selalu ada kata "dan" sebelum jawaban yang terakhir.
+- Tidak perlu kata "dan" apabila jawabannya hanya satu.
+- Gunakan algoritma yang paling efisien yang kamu ketahui.
+  Kompleksitas O(n^2) tidak termasuk jawaban yang memuaskan.
+- Program yang dibuat harus membaca sebuah file yang berisikan sebuah nomor yang akan dipakai sebagai N.
+- Program harus print output ke file lain.
+- Apabila file input terdiri dari lebih dari satu baris, maka tolak dan print error.
+- Apabila file mengandung huruf maka tolak dan print error.
+- Output harus ke file.
